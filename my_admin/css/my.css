@@ -1,0 +1,201 @@
+.table{
+    background-color: white;
+    margin-top: 8%;
+    padding: 3%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px grey;
+    
+}
+
+.table tbody tr{
+    transition: 0.3s;
+}
+.table tbody tr:hover{
+    transform: scale(1.04);
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.678);
+}
+.sidebar{
+    background: rgb(0,0,0);
+background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(51,50,50,1) 56%, rgba(55,1,105,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(51,50,50,1) 56%, rgba(55,1,105,1) 100%);
+background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(51,50,50,1) 56%, rgba(55,1,105,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#370169",GradientType=1);}
+.nav-item{
+    transition: 0.2s;
+    border-radius: 10px;
+}
+.nav-item:hover{
+     background-color: rgba(23, 0, 53, 0.733);
+}
+.dropdown , .dropdown-menu{
+    z-index: 100;
+}
+.deleteAction:hover{
+color: red;
+}
+
+#userSignUpForm{
+    display: none;
+    margin-bottom: 8%;
+   }
+   .userLoginForm{
+    width: 70%;
+    margin: auto;
+   background-color: whitesmoke;
+   border-radius: 25px;
+   padding: 30px;
+   box-shadow: gray 0px 0px 20px;
+}
+.userLoginFormInputEmail{
+ padding: 12px;
+ font-size: 111%;
+ font-weight: bolder;
+ outline: none;
+ border: none;
+ box-shadow: inset rgb(99, 99, 99) 0px 0px 9px;
+ border-radius: 15px;
+
+}
+.userLoginFormInputEmail:focus{
+    outline: none;
+    border: none;
+    background-color: honeydew;
+}
+.hideDisplay:hover{
+    
+    color: red;
+    cursor: pointer;
+}
+.hideDisplay{
+    width: 50px;
+   
+ }
+ .cardInputs {
+    color: black;
+    font-size: xx-large;
+    font-family: NRT-Reg;
+   margin: 10px;
+   padding: 2%;
+   outline: none;
+   max-width: 95%;
+   border: rgba(128, 128, 128, 0.548) 4px solid;
+   background: rgb(204,203,203);
+   background: linear-gradient(55deg, rgba(204,203,203,1) 4%, rgba(250,247,247,1) 51%, rgba(173,173,173,1) 100%);        border-radius: 15px
+}
+.cardInputs input:hover , .cardInputs input:focus-within{
+   box-shadow: 0px 0px 15px;
+}
+.cardUploader{
+   background-color: whitesmoke;
+   border-radius: 25px;
+   box-shadow: 0px 0px 15px ;
+   max-width: 95%;
+   margin: auto;
+}
+#inputCardImage{
+   border-radius: 25px;
+margin: auto;
+   margin-top: 3%;
+   box-shadow: 0px 0px 15px rgb(107, 107, 107);
+   height: fit-content;
+background-image: url(img/ocean.jpg);
+}
+.card{
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    transition: 0.3s;
+    color: black;
+}
+.card:hover{
+  background-color: rgb(70, 69, 69);
+  color: white;    
+}
+details p{
+    max-width: 200px;
+    word-wrap: break-word;
+    overflow: auto;
+    max-height: 300px;
+    background-color: rgba(255, 255, 255, 0.349);
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: grey 0px 0px 1px;
+    scroll-behavior: smooth;
+    cursor: text;
+}
+details{
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+hr{
+    background-color: white;
+}
+.updateUserStyle{
+    background-color: rgb(206, 206, 206);
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0px 10px 30px gray;
+    max-width: 70%;
+    min-width: 25%;
+    color: black;
+    position: relative;
+    margin-top: 5%;
+  
+}
+.updateUserHeader{
+    text-align: center;
+    color: black;
+}
+.updateUserHeader hr{
+    background-color: black;
+    width: 100%;
+
+}
+
+#updatecardnew{
+display: none;
+}
+.text p{
+    text-align: center;
+    color: red;
+}
+ 
+[data-link] {
+    cursor: pointer;
+  }
+  .notis::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+
+.notis::-webkit-scrollbar-track {
+    background: #0d09ff;
+  }
+  
+  .notis::-webkit-scrollbar-thumb{
+    background: rgba(245, 245, 245, 0.881);
+    border-radius: 15px;
+  }
+  .msgcontent h2{
+      font-size: 3.5vh;
+      word-wrap: break-word;
+      color: black;
+      max-width: 90%;
+  }
+  .msgcontent p{
+    word-wrap: break-word;
+    max-width: 90%;
+    color: gray;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+     max-height: 25px;
+  }
+  .notiHeader{
+      color: rgba(201, 201, 201, 0.541);
+    text-align: center;
+    font-size: 4vh;
+  }
+  .msgcontent {
+max-width: 200px;  }

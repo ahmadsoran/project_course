@@ -1,0 +1,218 @@
+
+@font-face{
+    font-family: NRT-Reg;
+    src: url(fonts/NRT-Reg.ttf);
+}
+html{
+    direction: rtl;
+    behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.toolsCard{
+    margin: 2%;
+    text-align: center;
+    padding: 2%;
+    background: whitesmoke;
+    border-radius: 25px;
+    box-shadow: rgb(116, 115, 115) 0px 0px 15px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.toolsCard:hover{
+    background-color: rgb(224, 224, 224);
+    transform: scale(1.1);
+    box-shadow: rgb(78, 78, 78) 0px 0px 24px;
+}
+.toolsCard:active{
+    background-color: black;
+    color: whitesmoke;
+}
+.toolsCard img{
+    width: 36%;
+       display: flex;
+    margin-left: auto;
+   margin-right: auto;
+}
+.myfont{
+    font-family: NRT-Reg;
+    font-size: 120%;
+}.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: right;
+    background-color: rgb(209, 209, 255);
+    margin-top: 33px;
+    border-radius: 15px;
+  }
+  
+  .sidenav a:hover {
+    color: black;
+    background-color: whitesmoke;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #body {
+    transition: margin 0.5s;
+
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}}
+
+    .logo img{
+        width: 60px;
+    }
+    .header{
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    .headerText{
+        align-items: center;
+        align-self: center;
+
+    }
+    .headerText h2{
+        text-align: center;
+        direction: ltr;
+    }
+    .sidebarimg img{
+        border-radius: 50%;
+        box-shadow: rgb(68, 68, 67) 0px 0px 15px;
+        border: rgb(71, 71, 71) 4px solid;
+    }
+    .sidebarbtn{
+        margin-top: 10%;
+    }
+    
+    #displayUserForm{
+        display: none;
+        max-width: 90%;
+      
+    }
+    .hideDisplay:hover{
+    
+        color: red;
+        cursor: pointer;
+    }
+    .hideDisplay{
+        width: 50px;
+         
+     }
+     #userLoginForm{
+       display: none;
+       margin-bottom: 8%;
+     }
+     .userLoginForm{
+         width: 70%;
+         margin: auto;
+        background-color: whitesmoke;
+        border-radius: 25px;
+        padding: 30px;
+        box-shadow: gray 0px 0px 20px;
+     }
+     .userLoginFormInputEmail{
+      padding: 12px;
+      font-size: 111%;
+      font-weight: bolder;
+      outline: none;
+      border: none;
+      box-shadow: inset rgb(99, 99, 99) 0px 0px 9px;
+      border-radius: 15px;
+
+     }
+     .userLoginFormInputEmail:focus{
+         outline: none;
+         border: none;
+         background-color: honeydew;
+     }
+     .table{
+         margin-top: 5%;
+         background-color: whitesmoke;
+         box-shadow: gray 0px 0px 20px;
+         border-radius: 15px;
+         position: relative;
+         margin-top: 8%;
+         padding: 20px
+
+     }
+     .table tbody tr{
+        width: fit-content;
+        background-color: white;
+        transition: 0.3s;
+    }
+    .table tbody tr:hover{
+        transform: scale(1.04);
+        background-color: rgb(243, 243, 243);
+		box-shadow: 0px 0px 5px gray;
+           
+     }
+     #userSignUpForm{
+      display: none;
+      margin-bottom: 8%;
+     }
+     .cardInputs input{
+         color: black;
+         font-size: xx-large;
+         font-family: NRT-Reg;
+        margin: 10px;
+        padding: 2%;
+        outline: none;
+        max-width: 95%;
+        border: rgba(128, 128, 128, 0.548) 4px solid;
+        background: rgb(204,203,203);
+        background: linear-gradient(55deg, rgba(204,203,203,1) 4%, rgba(250,247,247,1) 51%, rgba(173,173,173,1) 100%);        border-radius: 15px
+    }
+    .cardInputs input:hover , .cardInputs input:focus-within{
+        box-shadow: 0px 0px 15px;
+    }
+    .cardUploader{
+        background-color: whitesmoke;
+        border-radius: 25px;
+        box-shadow: 0px 0px 15px ;
+        max-width: 95%;
+        margin: auto;
+    }
+    #inputImg{
+        border-radius: 25px;
+        float: left;
+        margin-top: 3%;
+        box-shadow: 0px 0px 15px grey;
+        background-image: url(img/ocean.jpg);
+        height: fit-content;
+    }
+ #cardUpload{
+     display: none;
+ }
