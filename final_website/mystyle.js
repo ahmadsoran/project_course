@@ -68,5 +68,38 @@ VanillaTilt.init(document.querySelectorAll(".brand_box img , .about_img img"), {
 
 //It also supports NodeList
 VanillaTilt.init(document.querySelectorAll(".brand_box img ,.about_img img "));
+let hswiper = new Swiper(".headSwiper", {
+  spaceBetween: 30,
+  effect: "fade",
+  
+});
 
-AOS.init({});
+let swiper = new Swiper(".mySwiper", {
+loop: true,
+  effect: "coverflow",
+  grabCursor: false,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 37,
+    stretch: 0,
+    depth: 200,
+    modifier: 1,
+    slideShadows: false,
+  },
+  
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+    
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: 'bullets',
+    clickable: true,
+    clickable: 	'swiper-pagination-clickable',
+  },
+});
+
+
+AOS.init();

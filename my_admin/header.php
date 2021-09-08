@@ -80,6 +80,7 @@ if(isset($_SESSION['username'])){
             <h6 class="collapse-header">Custom Components:</h6>
             <a class="collapse-item" href="?p=cards">Cards</a>
             <a class="collapse-item" href="?p=messages">Messages</a>
+            <a class="collapse-item" href="?p=homeSliderCard">Main Web Slider</a>
         </div>
     </div>
 </li>
@@ -179,8 +180,8 @@ if(isset($_SESSION['username'])){
                                 <!-- Counter - Alerts -->
                                 <span class="badge badge-danger badge-counter">        <?php
                       
-                      $sql2 = "SELECT COUNT(distinct cardCunt.id) +  COUNT(distinct msgCunt.id) AS notifications
-                      FROM card cardCunt,  contact msgCunt;";
+                      $sql2 = "SELECT COUNT(distinct cardCunt.id) +  COUNT(distinct msgCunt.id) +   COUNT(distinct sliCunt.id) AS notifications
+                      FROM card cardCunt,  contact msgCunt, userslidercard sliCunt;";
                       $selectpost = $db->prepare($sql2);
                         if($selectpost->execute()){
                         while($row=$selectpost->fetch(PDO::FETCH_OBJ)){
@@ -212,7 +213,7 @@ if(isset($_SESSION['username'])){
                                 echo '
                                 <div class="col-12">
 
-                                <h1 class="notiHeader">New Messages</h1></div>
+                                <h1 class="notiHeader" style="color: red;">New Messages</h1></div>
                                 <div class="col-3  col-md-3 col-lg-3">
                                 
                                 <img style="display: flex; margin-top: 10px; align-items: center;" src="img/user.png" width="50vh" height="50vh" alt="">
@@ -243,7 +244,7 @@ if(isset($_SESSION['username'])){
                                       echo '
                                       <div class="col-12">
       
-                                      <h1 class="notiHeader">New Posts</h1></div>
+                                      <h1 class="notiHeader" style="color: rgb(0, 187, 0);">New Posts</h1></div>
                                       <div class="col-3  col-md-3 col-lg-3">
                                       
                                       <img style="display: flex; margin-top: 10px; align-items: center;" src="img/posted.png" width="50vh" height="50vh" alt="">
@@ -252,7 +253,7 @@ if(isset($_SESSION['username'])){
                                                 <div class="msgcontent">
                                                       <h2>'.$row->title.'</h2>
                                                       <hr>
-                                                      <img style="display: flex; margin-top: 10px; align-items: center;" src="../final_website/images/'.$row->cardImg.'" width="50vh" height="50vh" alt="">
+                                                      <img style="display: flex; margin-top: 10px; object-fit: contain; align-items: center;" src="../final_website/images/'.$row->cardImg.'" width="50vh" height="50vh"  alt="">
                                                       <em><a href="?p=cards">see</a></em>
                                                       
                                                   </div>
@@ -265,6 +266,37 @@ if(isset($_SESSION['username'])){
                                             
                                             
                                             ?>
+                                            <?php
+                                            $sql = "SELECT * FROM `userslidercard`" ;
+                                            $selectpost = $db->prepare($sql);
+                                              if($selectpost->execute()){
+                                            
+                                              for($i = 0 ; $row=$selectpost->fetch(PDO::FETCH_OBJ); $i++){
+                                             
+                                            echo '
+                                            <div class="col-12">
+            
+                                            <h1 class="notiHeader" style="color: gold;">New Slider Posts</h1></div>
+                                            <div class="col-3  col-md-3 col-lg-3">
+                                            
+                                            <img style="display: flex; margin-top: 10px; align-items: center;" src="img/posted.png" width="50vh" height="50vh" alt="">
+                                        </div>
+                                        <div class="col-9  col-md-9 col-lg-9">
+                                                      <div class="msgcontent">
+                                                            
+                                                            <img style="display: flex; margin-top: 10px; object-fit: contain; align-items: center;" src="../final_website/images/'.$row->image.'" width="50vh" height="50vh"  alt="">
+                                                            <em><a href="?p=homeSliderCard">see</a></em>
+                                                            
+                                                        </div>
+                                                        </div>
+            
+                                                        <hr style="background-color: rgba(255, 247, 174, 0.658); width: 100%;">
+                                                        ';
+                                                    }
+                                                  }
+                                                  
+                                                  
+                                                  ?>
                                     </div>
                                 </div>
                              

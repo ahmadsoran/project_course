@@ -101,6 +101,7 @@ $selectpost = $db->prepare($sql);
     <script src="animation/lib/anime.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="animation/vanilla-tilt.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="mystyle.js"></script>
 
 </body>

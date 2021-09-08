@@ -58,7 +58,7 @@
 <!-- end about -->
 
 <!-- brand -->
-<div class="brand" style="backdrop-filter: blur(6px);">
+<div class="brand">
     <div class="container">
         <div class="row">
             <div class="col-12 col-xs-8 col-sm-6 col-md-5 col-xl-4 col-lg-4">
@@ -70,34 +70,37 @@
         </div>
     </div>
 </div>
-<div class="brand-bg">
-    <div class="container">
+<div class="brand-bg" style="background-color: white;">
+    <div class="container-fluid">
         <div class="row">
-
-            <?php
-$sql = "SELECT * FROM card ORDER BY id";
-$selectpost = $db->prepare($sql);
-  if($selectpost->execute()){
-
-  for($i = 0 ; $row=$selectpost->fetch(PDO::FETCH_OBJ); $i++){
- 
-   echo '<div class="d-table col-xl-3 col-lg-4 col-md-4 col-sm-6 margin">
-<div class="brand_box" style="font-family: sans-serif;">
-    <div style="position: relative;">
-        <img class="CardiImg" src="images/'.$row->cardImg.'" alt="img" />
-    <h4>$<strong class="red">'.$row->price.'</strong></h4>
-    <h3>'.$row->title.'</h3>
-    <hr>
-</div>
-        <h5 style="margin: 5px;"><em>Storage:&nbsp;</em>'.$row->storage.'</h5>
-    <h5>color:<em >&nbsp;'.$row->color.'</em></h5>
-
-   <button class="btn btn-dark">See more</button>
-</div>
-</div>';
-  }
-}
-  ?>
+  
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  
+                    <?php
+                    $sql = "SELECT * FROM `userslidercard` ORDER BY id" ;
+                    $selectpost = $db->prepare($sql);
+                      if($selectpost->execute()){
+                    
+                      for($i = 0 ; $row=$selectpost->fetch(PDO::FETCH_OBJ); $i++){
+                     
+                    echo ' <div class="swiper-slide">
+                        <img src="slider_images/'.$row->image.'" />
+                        <h5>'.$row->price.'<em style="color: darkred;">$</em></h5>
+                      </div>
+                ';
+                    
+                    
+                      }
+                    }
+                    
+                    
+                    ?>
+                  
+                </div>
+                <div style="position: relative;" class="swiper-pagination"></div>
+              </div>
+        
             <div class="col-md-12">
                 <a class="read-more" href="?p=brand">See More</a>
 
@@ -128,12 +131,12 @@ $selectpost = $db->prepare($sql);
                 <li data-target="#testimonial_slider" data-slide-to="2" class=""></li>
             </ul>
             <!-- The slideshow -->
-            <div class="carousel-inner">
-                <div class="carousel-item">
+            <div class="carousel-inner" >
+                <div class="carousel-item" >
                     <div class="testomonial_section">
                         <div class="full center">
                         </div>
-                        <div class="full testimonial_cont text_align_center cross_layout">
+                        <div  class="full testimonial_cont text_align_center cross_layout">
                             <div class="cross_inner">
                                 <h3>Due markes<br><strong class="ornage_color">Rental</strong></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
