@@ -1,4 +1,4 @@
-  <!-- brand --->
+  <!-- brand -->
  
         <div class="brand-bg">
             <div class="container">
