@@ -5,6 +5,12 @@ $r:red;
 $pdn0: 0;
 $mrg0: 0;
 
+*::selection {
+    background-color: rgba(255, 0, 0, 0.849);
+    color: #fff;
+
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -14,7 +20,7 @@ body::before {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-image: url(images/bg.png);
+    background-image: url(sections/bg.png);
     left: 0%;
     z-index: -1;
     background-size: cover;
@@ -46,15 +52,46 @@ body::before {
 
 }
 
+
+
 #Mnavbar {
     z-index: 9999;
-    background-color: rgba(245, 245, 245, 0.567);
+    background-color: rgba(245, 245, 245, 0.967);
+    -moz-background-color: rgba(51, 45, 45, 0.967);
     border-radius: 25px;
     backdrop-filter: blur(5px);
     margin-top: 1%;
-    margin-left: 1%;
+    margin-left: 2.2%;
     position: fixed;
     box-shadow: 0px -2px 10px grey;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+@media only screen and (min-width: 2500px) {
+    #Mnavbar {
+        z-index: 9999;
+        background-color: rgba(245, 245, 245, 0.967);
+        -moz-background-color: rgba(51, 45, 45, 0.967);
+        border-radius: 2.5vh;
+        backdrop-filter: blur(5px);
+        margin-top: 1%;
+        margin-left: 2.2%;
+        position: fixed;
+        box-shadow: 0px -2px 10px grey;
+        -webkit-border-radius: 2.5vh;
+        -moz-border-radius: 2.5vh;
+        -ms-border-radius: 2.5vh;
+        -o-border-radius: 2.5vh;
+        font-size: 1vw;
+    }
+
+    .navbar-brand {
+        font-size: 1.5vw;
+
+    }
 }
 
 @media only screen and (max-width: 705px) {
@@ -66,6 +103,7 @@ body::before {
         margin: 0;
 
     }
+    
 
 }
 
@@ -134,6 +172,17 @@ body::before {
         }
     }
 
+}
+
+.noteLogn{
+    
+    img{
+        width: 50%;
+        height: fit-content;
+        top: -37%;
+        left: 0%;
+        
+    }
 }
 
 .s1 {
@@ -210,6 +259,7 @@ $carousel-transition-duration: .6s;
 }
 
 
+
 .about_box {
 
     h3,
@@ -267,9 +317,9 @@ h6 .h1 {
     width: 30%;
     height: 60vh;
 
-    h5{
+    h5 {
         text-align: center;
-        }
+    }
 }
 
 .swiper-slide img {
@@ -278,92 +328,114 @@ h6 .h1 {
     height: 57vh;
     object-fit: contain;
     background-color: transpert;
-   position: relative;
+    position: relative;
 }
 
-@media only screen and (max-width: 980px){
+
+@media only screen and (max-width: 1920px) {
     .swiper {
-    width: 100%;
-    padding-top: 50px;
-    background-color: transpert;
-    padding-bottom: 5%;
-    object-fit: cover;
-}
-    
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
-    background-color: transpert;
-    width: 40%; 
-    height: 60vh;
+        width: 100%;
+        padding-top: 50px;
+        background-color: transpert;
+        padding-bottom: 5%;
+        object-fit: cover;
+    }
 
-    
-}
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        background-color: transpert;
+        width: 30%;
+        height: 60vh;
+
+
+    }
 
 }
 
-    
-@media only screen and (max-width: 580px){
+@media only screen and (max-width: 980px) {
     .swiper {
-    width: 100%;
-    padding-top: 50px;
-    background-color: transpert;
-    padding-bottom: 5%;
-    object-fit: cover;
-}
-    
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
-    background-color: transpert;
-    width: 60%; 
-    height: 60vh;
+        width: 100%;
+        padding-top: 50px;
+        background-color: transpert;
+        padding-bottom: 5%;
+        object-fit: cover;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        background-color: transpert;
+        width: 40%;
+        height: 60vh;
+
+
+    }
 
 }
 
-}
 
-
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 580px) {
     .swiper {
-    width: 100%;
-    padding-top: 50px;
-    background-color: transpert;
-    padding-bottom: 5%;
-    object-fit: cover;
-}
-    
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
-    background-color: transpert;
-    width: 80%; 
-    height: 60vh;
+        width: 100%;
+        padding-top: 50px;
+        background-color: transpert;
+        padding-bottom: 5%;
+        object-fit: cover;
+    }
 
-   
-}
- 
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        background-color: transpert;
+        width: 60%;
+        height: 60vh;
+
+    }
+
 }
 
-    
-@media only screen and (max-width: 280px){
+
+@media only screen and (max-width: 380px) {
     .swiper {
-    width: 100%;
-    padding-top: 50px;
-    background-color: transpert;
-    padding-bottom: 5%;
-    object-fit: cover;
-}
-    
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
-    background-color: transpert;
-    width: 100%; 
-    height: 60vh;
+        width: 100%;
+        padding-top: 50px;
+        background-color: transpert;
+        padding-bottom: 5%;
+        object-fit: cover;
+    }
 
-   
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        background-color: transpert;
+        width: 80%;
+        height: 60vh;
+
+
+    }
+
 }
+
+
+@media only screen and (max-width: 280px) {
+    .swiper {
+        width: 100%;
+        padding-top: 50px;
+        background-color: transpert;
+        padding-bottom: 5%;
+        object-fit: cover;
+    }
+
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        background-color: transpert;
+        width: 100%;
+        height: 60vh;
+
+
+    }
 
 }
 
@@ -454,3 +526,147 @@ h6 .h1 {
 em {
     font-style: normal;
 }
+
+//  product section
+.productContent{
+    padding-top: 10%;
+    
+
+   }
+   .a{
+    border-left: rgba(128, 128, 128, 0.623) 2px solid;
+
+   }
+   .productImg{
+       padding: 1%;
+       img{
+           max-height: 90vh;
+           width: 100vw;
+           object-fit: contain;
+       }
+}
+.p-content{
+   
+    padding: 1%;
+    
+ 
+  
+}
+.p-texts{
+    h2{
+        line-height: 10vw;
+        word-wrap: break-word;
+        word-spacing: 1px;
+        font-size: 4vw;
+    }
+    
+}
+.p-Des{
+    max-height: 600px;
+    overflow: auto;
+}
+@media only screen and (max-width: 758px) {
+    .a{
+        border: none;
+    }
+}   
+
+// product section end 
+ 
+//  login
+
+.Mcontanier{
+    background-color: whitesmoke;
+    position: relative;
+    padding-top: 6%;
+  
+   
+
+}
+.note{
+     width: fit-content;
+     padding: 3%;
+     margin-left: -15px;
+     position: relative;
+     background-color: white;
+     background-color: white;
+     transform: rotateZ(-10deg) ;
+     -webkit-transform: rotateZ(-10deg) ;
+     -moz-transform: rotateZ(-10deg) ;
+     -ms-transform: rotateZ(-10deg) ;
+     -o-transform: rotateZ(-10deg) ;
+     box-shadow: 5px -3px 15px gray;
+     transition: all ease-in-out 0.5s;
+     -webkit-transition: all ease-in-out 0.5s;
+     -moz-transition: all ease-in-out 0.5s;
+     -ms-transition: all ease-in-out 0.5s;
+     -o-transition: all ease-in-out 0.5s;
+     cursor: pointer;
+     &:hover     
+{
+             box-shadow: none;
+             transform: scale(0.8) rotateZ(0deg);
+             -webkit-transform: scale(0.8) rotateZ(0deg);
+             -moz-transform: scale(0.8) rotateZ(0deg);
+             -ms-transform: scale(0.8) rotateZ(0deg);
+             -o-transform: scale(0.8) rotateZ(0deg);
+}
+    
+}
+.textNote{
+position: absolute;
+left: 25%;
+top: 50%;
+word-wrap: break-word;
+h2{
+    font-size: 2.5vw;
+    transform: rotateZ(-10deg);
+    -webkit-transform: rotateZ(-10deg);
+    -moz-transform: rotateZ(-10deg);
+    -ms-transform: rotateZ(-10deg);
+    -o-transform: rotateZ(-10deg);
+}
+
+}
+.Mlogin{
+    padding: 5%;
+    max-width: 90%;
+    display: block;
+    margin: auto;
+
+   h1{
+       text-align: center;
+   }
+   input{
+       border-radius: 25px;
+       -webkit-border-radius: 25px;
+       -moz-border-radius: 25px;
+       -ms-border-radius: 25px;
+       -o-border-radius: 25px;
+       outline: none;
+       transition: all ease-in-out 0.3s;
+       -webkit-transition: all ease-in-out 0.3s;
+       -moz-transition: all ease-in-out 0.3s;
+       -ms-transition: all ease-in-out 0.3s;
+       -o-transition: all ease-in-out 0.3s;
+       &:focus-within{
+           background-color: powderblue;
+           box-shadow: 0px -1px 10px grey;
+       }
+}
+button{
+    background-color: rgb(87, 87, 87);
+    color: $w;
+    
+}
+}
+   
+ #error{
+    color: red;
+    text-align: center;
+    margin: 15px;
+
+}
+
+    //    end log md
+

@@ -28,6 +28,7 @@
     </div>
 </section>
 
+
 <!-- about -->
 <div class="about">
     <div class="container">
@@ -47,9 +48,9 @@
 
             </div>
             <div class="col-xl-5 col-lg-5 col-md-5 co-sm-l2">
-                <div class="about_img" data-aos-duration="1000" data-aos-easing="ease-in-out-quart
+                <div style="overflow: hidden;" class="about_img" data-aos-duration="1000" data-aos-easing="ease-in-out-quart
                 " data-aos="zoom-in-left">
-                    <figure><img src="images/about.png" alt="img" /></figure>
+                    <figure> <img  src="images/about.png" alt="img" /></figure>
                 </div>
             </div>
         </div>

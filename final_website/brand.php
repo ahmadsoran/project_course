@@ -22,7 +22,8 @@ data-aos="zoom-in-up" style="font-family: sans-serif;">
         <h5 style="margin: 5px;"><em>Storage:&nbsp;</em>'.$row->storage.'</h5>
     <h5>color:<em >&nbsp;'.$row->color.'</em></h5>
 
-   <button class="btn btn-dark">See more</button>
+  <a href="?p=product&idc='.$row->id.'"> <button class="btn btn-dark">See more</button></a>
+
 </div>
 </div>
 ';
@@ -34,4 +35,3 @@ data-aos="zoom-in-up" style="font-family: sans-serif;">
                 </div>
             </div>
         </div>
-   

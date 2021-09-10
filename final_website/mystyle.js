@@ -9,6 +9,11 @@ anime({
 
 
 anime({
+  targets: '.logined',
+  translateY: [-250, 0],
+  duration: 4000
+});
+anime({
   targets: '.navbar',
   translateY: [-250, 0],
   duration: 3000
@@ -101,5 +106,11 @@ loop: true,
   },
 });
 
+function vTOi(){
+  document.getElementById("email1").value= "a@a.a";
+  document.getElementById("password1").value= "a";
+
+}
 
 AOS.init();
+

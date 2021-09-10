@@ -51,6 +51,7 @@ $selectpost = $db->prepare($sql);
 <body>
 
 	<div class="container h-100">
+	 
 		<div class="d-flex justify-content-center h-100">
 			<div class="user_card">
 				<div class="d-flex justify-content-center">
@@ -64,13 +65,13 @@ $selectpost = $db->prepare($sql);
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>
-							<input type="text" name="username" class="form-control input_user" value="" placeholder="username">
+							<input type="text" name="username" class="form-control input_user" value="qwerty" placeholder="qwerty">
 						</div>
 						<div class="input-group mb-2">
 							<div class="input-group-append">
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
-							<input type="password" name="password" class="form-control input_pass" value="" placeholder="password">
+							<input type="password" name="password" class="form-control input_pass" value="" placeholder="none">
 						</div>
 						<div class="form-group">
 							<div class="custom-control custom-checkbox">
