@@ -84,9 +84,7 @@
                                     <span class="visually-hidden">Toggle Dropdown</span>
                                   </button>
                                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                                    <li><a class="dropdown-item" href="#">Setting</a></li>
-                                    <li><a class="dropdown-item" href="#">See Yor Orders</a></li>
+                                    <li><a class="dropdown-item" href="#">just Example</a></li>
                                     <li><hr class="dropdown-divider"></li>
                                     <li><a class="dropdown-item" href="?p=logout">LogOut</a></li>
                                   </ul>

@@ -293,8 +293,8 @@ translateX: [
 
 anime({
   targets: '.aboutHeaderText h1 ,.aboutHeaderText h6 ,.aboutHeaderText h3',
-  delay: 1000,
   scaleY: [0,1],
-  duration: 500,
+  delay: 3000,
+  duration: 1000,
   easing: 'linear'
 });

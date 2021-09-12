@@ -30,7 +30,7 @@
 
 
 <!-- about -->
-<div class="about">
+<div class="about" style="overflow: hidden ;">
     <div class="container">
         <div class="row">
 
@@ -124,7 +124,7 @@
 </div>
 <div class="clients_red">
     <div class="container">
-        <div id="testimonial_slider" class="carousel slide" data-ride="carousel">
+        <div id="testimonial_slider" class="carousel slide" data-ride="carousel" >
             <!-- Indicators -->
             <ul class="carousel-indicators">
                 <li data-target="#testimonial_slider" data-slide-to="0" class=""></li>
@@ -132,8 +132,8 @@
                 <li data-target="#testimonial_slider" data-slide-to="2" class=""></li>
             </ul>
             <!-- The slideshow -->
-            <div class="carousel-inner" >
-                <div class="carousel-item" >
+            <div class="carousel-inner">
+                <div class="carousel-item">
                     <div class="testomonial_section">
                         <div class="full center">
                         </div>
@@ -153,7 +153,7 @@
                     </div>
                 </div>
 
-                <div class="carousel-item active">
+                <div class="carousel-item active"   style="background-color: red;">
 
                     <div class="testomonial_section">
                         <div class="full center">
@@ -191,11 +191,11 @@
                                 <div class="full text_align_center margin_top_30">
                                     <img src="icon/testimonial_qoute.png">
                                 </div>
+                            
                             </div>
                         </div>
                     </div>
-                </div>
-
+                 </div>
             </div>
 
         </div>
