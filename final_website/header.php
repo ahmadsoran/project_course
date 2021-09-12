@@ -41,7 +41,7 @@
 </head>
 <!-- body -->
 
-<body class="main-layout ">
+<body  class="main-layout ">
 
     <!-- header -->
     <header>

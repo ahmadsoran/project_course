@@ -1,8 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap");
 *::-moz-selection {
   background-color: rgba(255, 0, 0, 0.849);
   color: #fff;
 }
-
 *::selection {
   background-color: rgba(255, 0, 0, 0.849);
   color: #fff;
@@ -635,5 +635,117 @@ em {
   color: red;
   text-align: center;
   margin: 15px;
+}
+
+.SectionAboutME {
+  background-color: white;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.aboutHeaderText {
+  word-wrap: break-word;
+}
+
+.aboutHeaderText h6, .aboutHeaderText h1, .aboutHeaderText h3 {
+  font-family: 'Prompt', sans-serif;
+  text-transform: uppercase;
+  font-size: clamp(1rem, 2.3vw, 3rem);
+  transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  -o-transform: scaleY(0);
+}
+
+.aboutHeaderText span {
+  margin-top: 10%;
+  margin-left: -6%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 50%;
+}
+
+.aboutHeaderText i {
+  font-size: clamp(1rem, 3vw, 5rem);
+  transition: all ease-in-out 0.5s;
+  -webkit-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+  -ms-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+}
+
+.aboutHeaderText i:hover {
+  color: powderblue;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  text-shadow: 0px 3px 4px gray;
+  cursor: pointer;
+}
+
+.AboutImg {
+  background-image: url(images/aboutmepic.jpeg);
+  width: 180%;
+  height: 180%;
+  -webkit-clip-path: circle(40%);
+          clip-path: circle(40%);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  margin-top: -30%;
+  position: absolute;
+  overflow: hidden;
+  transition: all ease-in-out 0.6s;
+  -webkit-transition: all ease-in-out 0.6s;
+  -moz-transition: all ease-in-out 0.6s;
+  -ms-transition: all ease-in-out 0.6s;
+  -o-transition: all ease-in-out 0.6s;
+}
+
+.AboutImg:hover {
+  transform: translateX(-20%);
+  -webkit-transform: translateX(-20%);
+  -moz-transform: translateX(-20%);
+  -ms-transform: translateX(-20%);
+  -o-transform: translateX(-20%);
+}
+
+.AboutImg h3 {
+  background-color: rgba(255, 255, 255, 0.233);
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  z-index: 100;
+  bottom: 45%;
+  left: 35%;
+  -webkit-backdrop-filter: grayscale(100%);
+          backdrop-filter: grayscale(100%);
+  -webkit-box-shadow: 0px 3px 8px;
+          box-shadow: 0px 3px 8px;
+}
+
+.midText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 30%;
+  margin-top: 5%;
+  margin-left: -2%;
+  font-weight: bolder;
+  font-family: 'Prompt', sans-serif;
 }
 /*# sourceMappingURL=mystyle.css.map */

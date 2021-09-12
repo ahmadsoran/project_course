@@ -114,3 +114,187 @@ function vTOi(){
 
 AOS.init();
 
+anime({
+  targets: '.AboutImg h3',
+delay: 600,
+
+ translateX: [
+  
+  { value: [-300,0], duration: 6000  },
+  { value: [0,900], duration: 6000 , delay:9000 },
+ 
+   
+  ],
+  rotate:   { value: [360,0], duration: 6000  },
+
+  scaleX: [
+    { value: [1,7], duration: 3000, delay: 6100 },
+    { value: [7,1], duration: 2000, delay: 4500  },
+
+   
+  ],
+  scaleY: [
+    { value: [1,10], duration: 2000, delay: 7200 },
+    { value: [10,1], duration: 2000, delay: 2000 },
+
+   
+  ],
+
+  easing: 'easeOutElastic(1, .8)',
+  loop: true
+});
+
+
+anime({
+  targets: '.a1',
+delay: 600,
+translateY: [
+  
+  { value: [-600,0], duration: 1000  },
+ 
+   
+  ],
+translateX: [
+  
+  { value: [600,0], duration: 1000, delay: 1100, },
+ 
+   
+  ],
+ 
+  
+
+  easing: 'easeOutElastic(1, .8)',
+});
+
+anime({
+  targets: '.a2',
+  delay: 1100,
+translateY: [
+  
+  { value: [-600,0], duration: 1000  },
+ 
+   
+  ],
+translateX: [
+  
+  { value: [600,0], duration: 1000, delay: 1000*2, },
+ 
+   
+  ],
+ 
+  
+  easing: 'easeOutElastic(1, .8)',
+
+});
+
+anime({
+  targets: '.a3',
+delay: 1100*2,
+translateY: [
+  
+  { value: [-600,0], duration: 1000  },
+ 
+   
+  ],
+translateX: [
+  
+  { value: [600,0], duration: 1000, delay: 1000*4, },
+ 
+   
+  ],
+ 
+  
+  easing: 'easeOutElastic(1, .8)',
+
+});
+
+anime({
+  targets: '.a4',
+delay: 1100*4,
+translateY: [
+  
+  { value: [-600,0], duration: 1000  },
+ 
+   
+  ],
+translateX: [
+  
+  { value: [600,0], duration: 1000, delay: 1000*6, },
+ 
+   
+  ],
+ 
+  
+  easing: 'easeOutElastic(1, .8)',
+
+});
+
+anime({
+  targets: '.a5',
+delay: 1100*6,
+translateY: [
+  
+  { value: [-600,0], duration: 1000  },
+ 
+   
+  ],
+translateX: [
+  
+  { value: [600,0], duration: 1000, delay: 1000*8, },
+ 
+   
+  ],
+ 
+  
+  easing: 'easeOutElastic(1, .8)',
+
+});
+
+anime({
+  targets: '.a6',
+delay: 1100*8,
+translateY: [
+  
+  { value: [-600,0], duration: 1000  },
+ 
+   
+  ],
+translateX: [
+  
+  { value: [600,0], duration: 1000, delay: 1000*10, },
+ 
+   
+  ],
+ 
+  
+  easing: 'easeOutElastic(1, .8)',
+
+});
+
+
+anime({
+  targets: '.a7',
+delay: 1100*10,
+translateY: [
+  
+  { value: [-600,0], duration: 1000  },
+ 
+   
+  ],
+translateX: [
+  
+  { value: [600,0], duration: 1000, delay: 1000*12   },
+ 
+   
+  ],
+  easing: 'easeOutElastic(1, .8)',
+
+});
+
+anime({
+  targets: '.aboutHeaderText h1 , h6 ,h3',
+  delay: 1000,
+  scaleY: [0,1],
+  duration: 500,
+  easing: 'linear'
+});
